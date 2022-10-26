@@ -88,6 +88,7 @@ body {
 
 .nav-container {
   padding: 1rem 0;
+  position: relative;
 }
 .nav-container h2 {
   font-size: 1.2rem;
@@ -103,9 +104,14 @@ body {
 }
 
 nav {
-  display: none;
-  width: 100%;
+  width: 0;
+  overflow: hidden;
   max-width: 80rem;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  top: 25px;
+  left: 0;
 }
 nav img {
   width: 100%;
@@ -113,6 +119,12 @@ nav img {
 }
 nav ul {
   list-style: none;
+}
+nav ul li {
+  overflow: hidden;
+  text-align: center;
+  color: #161635;
+  transform: scale(0);
 }
 nav ul li :before {
   position: absolute;
