@@ -1,0 +1,296 @@
+$primary: #161635;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/*Generic classes*/
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.mt-2 {
+  @extend %mt-2;
+}
+
+.container {
+  width: 90%;
+  max-width: 200rem;
+  margin: auto;
+}
+
+//extends
+%mt-2 {
+  margin-top: 2rem;
+}
+
+%phone-design {
+  padding: 0.5rem;
+  background-color: #000;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4),
+    inset 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+//targetted
+
+.nav-container {
+  padding: 1rem 0;
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 100;
+  }
+}
+
+.hamburger {
+  color: white;
+  font-size: 3.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+nav {
+  display: none;
+  width: 100%;
+  max-width: 80rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      :before {
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0;
+        background-color: white;
+        content: "";
+        transform: scale(0);
+        opacity: 0;
+        transition: transform 0.2s ease-in-out, opacity 0.4s ease-in-out;
+        width: 100%;
+        height: 2px;
+      }
+      :hover::before {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      position: relative;
+    }
+  }
+}
+
+header {
+  background: linear-gradient(312deg, #805cd4, #5032d6, #7749f5);
+  background-size: 600% 600%;
+
+  animation: animateGradient 15s ease-in-out infinite;
+  padding: 5rem 0;
+}
+
+.header-text {
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  h3 {
+    // @extend %mt-2;
+    font-weight: 100;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-weight: 100;
+    font-size: 1.8rem;
+  }
+
+  > p:first-of-type {
+    @extend %mt-2;
+  }
+}
+
+.launch-demo-container {
+  @extend %mt-2;
+}
+
+.launch-demo {
+  @extend %mt-2;
+  background-color: $primary;
+  padding: 1.5rem;
+  border-radius: 25px;
+  width: fit-content;
+  color: #fff;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+
+  p {
+    position: relative;
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: scale(0);
+      transition: transform 0.2s ease-in-out, opacity 0.4s ease-in-out;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+
+    > ::before {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.app-container {
+  width: 25rem;
+
+  img {
+    @extend %mt-2;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.5);
+    }
+  }
+}
+
+.header-splash {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .splash-potrait-view {
+    @extend %phone-design;
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 5;
+    z-index: 2;
+  }
+
+  .splash-landscape-view {
+    @extend %phone-design;
+    grid-column: 1 / span 6;
+    grid-row: 2 / span 5;
+    z-index: 1;
+  }
+
+  .splash-convo {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    z-index: 2;
+    margin-left: 2rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      box-shadow: inset 0 0 6px 0 hsl(0deg 0% 100% / 59%),
+        inset 0 1px 0 0 hsl(0deg 0% 100% / 92%),
+        inset 0 0 5px 0 hsl(0deg 0% 100% / 20%);
+      border-radius: var(--rd, 2px);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+    }
+    .splash-message {
+      height: 5rem;
+    }
+  }
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 76%;
+  }
+  100% {
+    background-position: 0% 25%;
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body id="body">
+    <div class="bg-primary nav-container" id="nav-container">
+      <div class="flex justify-between align-center container">
+        <div class="site-logo text-center text-white">
+          <a href="#body">
+            <img
+              src="./assets/imgs/branding/site-logo.webp"
+              alt="Company Logo"
+            />
+          </a>
+          <h2 class="muted">Monitoring loved onces since 2014</h2>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+          <ul class="flex flex-row justify-around">
+            <li><a class="text-white" href="#body">Home</a></li>
+            <li><a class="text-white" href="#how-it-works">How it works</a></li>
+            <li><a class="text-white" href="#features">features</a></li>
+            <li><a class="text-white" href="#about us">about us</a></li>
+            <li><a class="text-white" href="#reviews">reviews</a></li>
+            <li><a class="text-white" href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <header class="flex flex-col justify-center align-center">
+      <div class="header-text container text-center">
+        <img src="./assets/imgs/branding/UKRI logo.webp" alt="UKRI Logo" />
+
+        <h1 class="text-white">
+          <span class="underline">Discreet</span> home Monitoring for
+          <strong><span class="underline">independent</span></strong> living
+        </h1>
+
+        <h3 class="text-white">Helps to keep loved ones in their own home</h3>
+
+        <div class="launch-demo-container text-center">
+          <p class="text-white">Try it yourself</p>
+
+          <div class="launch-demo mx-auto mt-2">
+            <p>Launch Demo Site</p>
+          </div>
+        </div>
+
+        <div
+          class="app-container flex flex-col align-center justify-center mx-auto"
+        >
+          <img
+            src="./assets/imgs/cta/apple-store.webp"
+            alt="download from the Apple store"
+          />
+          <img
+            src="./assets/imgs/cta/g-play-store.webp"
+            alt="download from the Google Play Store"
+          />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-splash mt-2">
+          <img
+            class="splash-potrait-view"
+            src="./assets/imgs/promo/potraitwebp.webp"
+            alt=""
+          />
+          <img
+            class="splash-landscape-view"
+            src="./assets/imgs/promo/landscape.webp"
+            alt=""
+          />
+          <div class="splash-convo">
+            <img
+              class="alan-potrait"
+              src="./assets/imgs/promo/alan-potrait.webp"
+              alt=""
+            />
+            <img
+              class="splash-message"
+              src="./assets/imgs/promo/message-1.webp"
+              alt=""
+            />
+            <img
+              class="splash-message"
+              src="./assets/imgs/promo/message-2.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

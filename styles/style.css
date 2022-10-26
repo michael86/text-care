@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/*Generic classes*/
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.bg-primary {
+  background-color: #161635;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 200rem;
+  margin: auto;
+}
+
+.app-container img, .launch-demo, .launch-demo-container, .header-text > p:first-of-type, .mt-2 {
+  margin-top: 2rem;
+}
+
+.header-splash .splash-landscape-view, .header-splash .splash-potrait-view {
+  padding: 0.5rem;
+  background-color: #000;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.nav-container {
+  padding: 1rem 0;
+}
+.nav-container h2 {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.hamburger {
+  color: white;
+  font-size: 3.5rem;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  width: 100%;
+  max-width: 80rem;
+}
+nav img {
+  width: 100%;
+  height: auto;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li :before {
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  background-color: white;
+  content: "";
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.4s ease-in-out;
+  width: 100%;
+  height: 2px;
+}
+nav ul li :hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+nav ul a {
+  text-decoration: none;
+  position: relative;
+}
+
+header {
+  background: linear-gradient(312deg, #805cd4, #5032d6, #7749f5);
+  background-size: 600% 600%;
+  -webkit-animation: animateGradient 15s ease-in-out infinite;
+          animation: animateGradient 15s ease-in-out infinite;
+  padding: 5rem 0;
+}
+
+.header-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.header-text h3 {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.header-text p {
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+.launch-demo {
+  background-color: #161635;
+  padding: 1.5rem;
+  border-radius: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+.launch-demo p {
+  position: relative;
+}
+.launch-demo p::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out, opacity 0.4s ease-in-out;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.launch-demo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.launch-demo:hover > ::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.app-container {
+  width: 25rem;
+}
+.app-container img {
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+.app-container img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.header-splash {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.header-splash img {
+  height: 100%;
+  width: 100%;
+}
+.header-splash .splash-potrait-view {
+  grid-column: 4/span 3;
+  grid-row: 1/span 5;
+  z-index: 2;
+}
+.header-splash .splash-landscape-view {
+  grid-column: 1/span 6;
+  grid-row: 2/span 5;
+  z-index: 1;
+}
+.header-splash .splash-convo {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+  z-index: 2;
+  margin-left: 2rem;
+  position: relative;
+}
+.header-splash .splash-convo::before {
+  content: "";
+  box-shadow: inset 0 0 6px 0 hsla(0deg, 0%, 100%, 0.59), inset 0 1px 0 0 hsla(0deg, 0%, 100%, 0.92), inset 0 0 5px 0 hsla(0deg, 0%, 100%, 0.2);
+  border-radius: var(--rd, 2px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.header-splash .splash-convo .splash-message {
+  height: 5rem;
+}
+
+@-webkit-keyframes animateGradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 76%;
+  }
+  100% {
+    background-position: 0% 25%;
+  }
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 76%;
+  }
+  100% {
+    background-position: 0% 25%;
+  }
+}/*# sourceMappingURL=style.css.map */
