@@ -1,0 +1,26 @@
+{
+    "open sans": {
+        "normal": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/OpenSans-Normal",
+        "bold": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/OpenSans-Bold",
+        "italic": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/OpenSans-Italic",
+        "bold_italic": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/OpenSans-BoldItalic"
+    },
+    "segoe": {
+        "normal": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/Segoe-Normal",
+        "bold": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/Segoe-Bold",
+        "italic": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/Segoe-Italic",
+        "bold_italic": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/Segoe-BoldItalic"
+    },
+    "roboto slab": {
+        "normal": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/RobotoSlab-Normal",
+        "bold": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/RobotoSlab-Bold",
+        "italic": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/RobotoSlab-Italic",
+        "bold_italic": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/RobotoSlab-BoldItalic"
+    },
+    "currencies": {
+        "normal": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/currencies",
+        "bold": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/currencies",
+        "italic": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/currencies",
+        "bold_italic": "\/homepages\/35\/d941202765\/htdocs\/text-care\/wp-content\/uploads\/wpo_wcpdf_2885dbcdea1e12ba4020c56a6b824bc4\/fonts\/currencies"
+    }
+}

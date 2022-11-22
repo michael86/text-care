@@ -1,0 +1,54 @@
+# Translation of Plugins - Visibility Logic for Elementor - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - Visibility Logic for Elementor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-05-23 14:58:50+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - Visibility Logic for Elementor - Stable (latest release)\n"
+
+#: core/settings/OldVersionFallback.php:138
+msgid "Hidden for:"
+msgstr "Hidden for:"
+
+#: core/settings/OldVersionFallback.php:121
+msgid "Visible for:"
+msgstr "Visible for:"
+
+#: core/settings/BrowserTypeVisiblity.php:63
+#: core/settings/DateTimeVisibility.php:62
+#: core/settings/GeneralVisibility.php:57
+#: core/settings/GeneralVisibility.php:73
+#: core/settings/GeneralVisibility.php:128
+#: core/settings/OldVersionFallback.php:111
+#: core/settings/UserMetaVisibility.php:62
+#: core/settings/UserRoleVisibility.php:61
+msgid "No"
+msgstr "No"
+
+#: core/settings/BrowserTypeVisiblity.php:62
+#: core/settings/DateTimeVisibility.php:61
+#: core/settings/GeneralVisibility.php:56
+#: core/settings/GeneralVisibility.php:72
+#: core/settings/GeneralVisibility.php:127
+#: core/settings/OldVersionFallback.php:110
+#: core/settings/UserMetaVisibility.php:61
+#: core/settings/UserRoleVisibility.php:60
+msgid "Yes"
+msgstr "Yes"
+
+#: core/settings/OldVersionFallback.php:107
+msgid "Enable Conditions"
+msgstr "Enable Conditions"
+
+#. Plugin Name of the plugin
+msgid "Visibility Logic for Elementor"
+msgstr "Visibility Logic for Elementor"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/visibility-logic-elementor"
+msgstr "https://en-gb.wordpress.org/plugins/visibility-logic-elementor"
