@@ -1,0 +1,2 @@
+2022-11-22T11:44:28+00:00 CRITICAL Cannot declare class WC_Tracker, because the name is already in use in /homepages/35/d941202765/htdocs/text-care/wp-content/plugins/woocommerce/includes/class-wc-tracker.php on line 21
+
